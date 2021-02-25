@@ -14,20 +14,12 @@ function [x,y] = projectile_motion_drag(v,angle,g,m,A,cd,rho,y,x) % keep this fu
 %   x (initial horizontal position) - m
 %
 %The outputs will be:
-%   x (horizontal position vector) - Each x positon in incriments of 0.001
-%   sec
-%   y (vertical position vector) - Each y postion in incriments of 0.001
-%   sec
-%How It Works
-%   This function calculates the trajectory by iterating through each time
-%   incriment using a for loop to calculate the acceleration, velocity, and postion for both
-%   the horizontal and vertical axis.
+%   x (horizontal position vector), 
+%   y (vertical position vector)
 %Assumptions
 %   -This function assumes that the initial acceleration is zero in both
 %   the horizontal and vertical directions.
 %   -The time step is 0.001 seconds
-%   -The total time in the air does not exceed 100 sec
-%   -The projectile lands at 0 m.
 
 % Create a help entry here to explain this function when you type
 % "help projectile_motion_drag" in the command window
